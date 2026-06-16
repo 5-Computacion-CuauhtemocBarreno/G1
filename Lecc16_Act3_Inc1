@@ -1,0 +1,41 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Lecc16_Act3_Inc1");
+        Console.WriteLine("Santiago Ortiz-21");
+
+        int[] numEnt = new int[15];
+       
+        bool Rep = false;
+
+        for (int i = 0; i < 15; i++)
+        {
+            Console.WriteLine("Ingrese el numero " + (i + 1) + " :");
+            numEnt[i] = Convert.ToInt32(Console.ReadLine());
+          
+        }
+
+        for (int i = 0; i < 14; i++)
+        {
+            for (int comp = i + 1; comp < 15; comp++)
+            {
+                if (numEnt[i] == numEnt[comp])
+                {
+                    Rep = true;
+                }
+
+            }
+            
+        }
+        if (Rep)
+        {
+            Console.WriteLine("Si existe al menos uno repetido");
+        }
+        else 
+        {
+            Console.WriteLine("No se repite ningun numero"); 
+        }
+       
+    }
+}
