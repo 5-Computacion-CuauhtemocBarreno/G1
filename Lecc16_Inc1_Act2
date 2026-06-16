@@ -1,0 +1,29 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("Lecc16_Act2_Inc1");
+        Console.WriteLine("Santiago Ortiz-21");
+
+        int[] edadesPer = new int[7];
+        int cantPerMa = 0;
+
+        for (int i = 0; i < edadesPer.Length; i++)
+        {
+            Console.WriteLine("Ingrese al edad " + (i+1) + " :");
+            edadesPer[i] = Convert.ToInt32(Console.ReadLine());
+            if (edadesPer[i] >= 18)
+                cantPerMa++;
+        }
+
+        Console.Clear();
+        Console.WriteLine("Las edades ingresadas son " );
+        for (int i = 0; i < edadesPer.Length; i++)
+        {
+            Console.Write( edadesPer[i]+"-"  );
+           
+        }
+        Console.WriteLine("La cantidad de personas mayores de edad son: " + cantPerMa);
+
+    }
+}
