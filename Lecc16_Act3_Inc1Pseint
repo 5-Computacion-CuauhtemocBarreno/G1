@@ -1,0 +1,24 @@
+Algoritmo Act3_Lecc16_Inc1
+	Dimensionar numEnt[15]
+	Definir i,comp Como Real
+	Definir ER Como Logico
+	ER=Falso
+	Para i=1 Hasta 15 Hacer
+		Escribir "Ingrese el numero ",i, " : "
+		Leer numEnt[i]
+	Fin Para
+	
+	Para i=1 Hasta 14 Hacer
+		Para comp = i + 1 Hasta 15 Hacer
+			Si numEnt[i] = numEnt[i] Entonces
+				ER = Verdadero
+			FinSi
+		FinPara
+	Fin Para
+	
+	Si ER Entonces
+		Escribir "Si existe al menos un numero repetido"
+	SiNo
+		Escribir "No se repite ningun numero"
+	FinSi
+FinAlgorimo
