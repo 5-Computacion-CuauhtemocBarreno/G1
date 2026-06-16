@@ -1,0 +1,13 @@
+Algoritmo Act2_Lecc16_Inc1
+	Dimensionar edadesPer[7]
+	Definir i,canMaPer Como Real
+	Para i=1 Hasta 7 Hacer
+		Escribir "Ingrese la edad de la persona ",i, " : "
+		Leer edadesPer[i]
+		si edadesPer[i]>= 18 Entonces
+			canMaPer=canMaPer+1
+		FinSi
+	Fin Para
+	Escribir "Cantidad de personas mayores de edad: ",canMaPer
+	
+FinAlgoritmo
